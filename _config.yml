@@ -2,5 +2,11 @@
 title: Coding it Forward
 description: A rebel alliance of young people using technology for social good.
 
+show_downloads: false
+
+github:
+    is_project_page: true
+    repository_url: https://github.com/CodingItForward/codingitforward.github.io
+
 # GitHub pages theme
 theme: jekyll-theme-cayman
