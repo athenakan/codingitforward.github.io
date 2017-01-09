@@ -12,8 +12,7 @@ Then run:
 
 ```
 gem install bundler
-bundle config build.nokogiri --use-system-libraries
 bundle install
 ```
 
-If you get an error with a gem called `nokogiri`, [try this guide](http://stackoverflow.com/questions/19643153/error-to-install-nokogiri-on-osx-10-9-maverick).
+If you get an error with a gem called `nokogiri`, [try this guide](http://stackoverflow.com/questions/19643153/error-to-install-nokogiri-on-osx-10-9-maverick). And if you get an error with GitHub token permissions, [try this guide](http://mycyberuniverse.com/web/fixing-jekyll-github-metadata-warning.html).
