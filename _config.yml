@@ -8,5 +8,9 @@ github:
     is_project_page: true
     repository_url: https://github.com/CodingItForward/codingitforward.github.io
 
+external:
+    medium: https://medium.com/coding-it-forward
+    mailing_list: https://groups.google.com/forum/#!forum/coding-it-forward
+
 # GitHub pages theme
 theme: jekyll-theme-cayman
