@@ -4,17 +4,25 @@ title: Home
 
 # Who we are
 
-A mailing list and Medium publication for young people interested in using their technology skills for social good: in government, education, public health, etc. They'll feature job and internship opportunities, interviews with leaders in this space, multi-college collaborative projects, and more.
+> We're a rebel alliance of young people using technology for social good. We're not coding to make the next food delivery app. We're coding to battle the tough problems in government, education, public health, and the like. We're coding to make the world a little bit better. **We're Coding it Forward.**
+
+[Read our intro post to get to know Coding it Forward.](https://medium.com/coding-it-forward/a-rebel-alliance-of-young-people-using-technology-for-social-good-846eeafa9653#.1a63huewo)
 
 # Get involved
 
-If you're a college student or recent grad excited about educational technology, technology for government and the public sector, international development technology, or anything like that, you've just found a network of like-minded young people who will give you career advice, project opportunities, and a sounding board for your ideas.
+We're a community of college students and young people who are excited about things like educational technology, public sector technology, international development, and spaces like that. If you're passionate about using technology for the greater good, you've just found a like-minded community that'll offer you:
 
-Follow us on [Medium]({{ site.external.medium }}) to read our interviews, articles, and analyses. And join our [mailing list]({{ site.external.mailing_list }}) to get job opportunities, organize projects, and keep up-to-date with the latest news in technology for social good!
+- **Job and internship opportunities** from the nation's top schools.
+- Connections with our **mentors**, including the former CTO of the US and the founder of the [United States Digital Service](https://www.usds.gov/).
+- Opportunities to work on technology and social impact **projects** with students at top schools.
+
+And much more!
+
+Sound exciting? Follow us on [Medium]({{ site.external.medium }}) and join our [mailing list]({{ site.external.mailing_list }})!
 
 # About us
 
-We're a team of Harvard computer scientists passionate about using technology for social good.
+Our cofounders are a team of Harvard computer scientists passionate about using technology for social good.
 
 - [Neel Mehta](http://hathix.com)
 - [Athena Kan](https://medium.com/@kan_academy)
