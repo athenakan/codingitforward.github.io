@@ -1,4 +1,8 @@
-# CodingItForward.github.io
+# Coding it Forward
+
+> We're a rebel alliance of young people using technology for social good.
+
+This is the code behind [codingitforward.com](http://codingitforward.com). Built using Jekyll, Ruby, and GitHub pages.
 
 ## Running the site
 
