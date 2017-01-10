@@ -13,7 +13,7 @@ title: Home
 We're a community of college students and young people who are excited about things like educational technology, public sector technology, international development, and spaces like that. If you're passionate about using technology for the greater good, you've just found a like-minded community that'll offer you:
 
 - **Job and internship opportunities** from the nation's top schools.
-- Connections with our **mentors**, including the former CTO of the US and the founder of the [United States Digital Service](https://www.usds.gov/).
+- Connections with our **mentors**, including the former deputy CTO of the US and the founder of the [United States Digital Service](https://www.usds.gov/).
 - Opportunities to work on technology and social impact **projects** with students at top schools.
 - A forum to connect with talented students in this space.
 
