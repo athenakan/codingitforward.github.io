@@ -6,7 +6,7 @@ title: Home
 
 > We're a rebel alliance of young people using technology for social good. We're not coding to make the next food delivery app. We're coding to battle the tough problems in government, education, public health, and the like. We're coding to make the world a little bit better. **We're Coding it Forward.**
 
-[Read our intro post to get to know Coding it Forward.](https://blog.codingitforward.com/a-rebel-alliance-of-young-people-using-technology-for-social-good-846eeafa9653#.40033t8rf)
+[Read our intro post to learn why we're Coding it Forward.](https://blog.codingitforward.com/a-rebel-alliance-of-young-people-using-technology-for-social-good-846eeafa9653#.40033t8rf)
 
 # Join the alliance
 
@@ -15,7 +15,7 @@ We're a community of college students and young people who are excited about thi
 - **Job and internship opportunities** from the nation's top schools.
 - Connections with our **mentors**, including the former deputy CTO of the US and the founder of the [United States Digital Service](https://www.usds.gov/).
 - Opportunities to work on technology and social impact **projects** with students at top schools.
-- A forum to connect with talented students in this space.
+- A forum to learn from other top students in the field.
 
 And much more!
 
