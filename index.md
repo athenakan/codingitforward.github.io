@@ -6,9 +6,9 @@ title: Home
 
 > We're a rebel alliance of young people using technology for social good. We're not coding to make the next food delivery app. We're coding to battle the tough problems in government, education, public health, and the like. We're coding to make the world a little bit better. **We're Coding it Forward.**
 
-[Read our intro post to get to know Coding it Forward.](https://medium.com/coding-it-forward/a-rebel-alliance-of-young-people-using-technology-for-social-good-846eeafa9653#.1a63huewo)
+[Read our intro post to get to know Coding it Forward.](https://blog.codingitforward.com/a-rebel-alliance-of-young-people-using-technology-for-social-good-846eeafa9653#.40033t8rf)
 
-# Get involved
+# Join the alliance
 
 We're a community of college students and young people who are excited about things like educational technology, public sector technology, international development, and spaces like that. If you're passionate about using technology for the greater good, you've just found a like-minded community that'll offer you:
 
@@ -19,9 +19,9 @@ We're a community of college students and young people who are excited about thi
 
 And much more!
 
-Sound exciting? Follow us on [Medium]({{ site.external.medium }}) and join our [mailing list]({{ site.external.mailing_list }})!
+Sound exciting? Follow us on [our blog]({{ site.external.medium }}) and join our [mailing list]({{ site.external.mailing_list }})!
 
-# About us
+# A bit of background
 
 Our cofounders are a team of Harvard computer scientists passionate about using technology for social good.
 
@@ -29,4 +29,4 @@ Our cofounders are a team of Harvard computer scientists passionate about using 
 - [Athena Kan](https://medium.com/@kan_academy), athenakan [at] college [dot] harvard [dot] edu
 - [Chris Kuang](https://medium.com/@chriskuang), ckuang [at] college [dot] harvard [dot] edu
 
-Want to know more? Feel free to email any of us!
+Want to know more? Feel free to email any or all of us!
