@@ -19,7 +19,7 @@ We're a community of college students and young people who are excited about thi
 
 And much more!
 
-Sound exciting? Read and follow [our blog]({{ site.external.medium }}), and join our [mailing list]({{ site.external.mailing_list }})!
+Sound exciting? Read and follow [our blog]({{ site.external.medium }}), and join our [mailing list]({{ site.external.mailing_list }}) to get special access to all our resources!
 
 # A bit of background
 
