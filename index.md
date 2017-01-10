@@ -26,7 +26,7 @@ Sound exciting? Read and follow [our blog]({{ site.external.medium }}), and join
 Our cofounders are a team of Harvard computer scientists passionate about using technology for social good.
 
 - [Neel Mehta](http://hathix.com), neelmehta [at] college [dot] harvard [dot] edu
-- [Athena Kan](https://medium.com/@kan_academy), athenakan [at] college [dot] harvard [dot] edu
+- [Athena Kan](http://athenakan.com), athenakan [at] college [dot] harvard [dot] edu
 - [Chris Kuang](https://medium.com/@chriskuang), ckuang [at] college [dot] harvard [dot] edu
 
 Want to know more? Feel free to email any or all of us!
