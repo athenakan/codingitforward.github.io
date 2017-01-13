@@ -10,7 +10,7 @@ title: Home
 
 ## Join the alliance
 
-We're a community of college students and young people who are excited about things like educational technology, public sector technology, international development, and spaces like that. If you're passionate about using technology for the greater good, you've just found a like-minded community that'll offer you:
+Sound exciting? If you're passionate about using technology for the greater good, you've just found a like-minded community that'll offer you:
 
 - **Job and internship opportunities** from the nation's top schools.
 - Connections with our **mentors**, including the former deputy CTO of the US and the founder of the [United States Digital Service](https://www.usds.gov/).
@@ -19,9 +19,18 @@ We're a community of college students and young people who are excited about thi
 
 And much more!
 
-Sound exciting? Read and follow [our blog]({{ site.external.medium }}), and join our [mailing list]({{ site.external.mailing_list }}) to get special access to all our resources!
+To get started, read and follow [our blog]({{ site.external.medium }}), and join our [mailing list]({{ site.external.mailing_list }}) to get special access to all our resources!
 
 If you'd like to take a bigger role in Coding it Forward by working on projects, writing for our blog, or serving as a Coding it Forward Campus Ambassador, [fill out this application](https://goo.gl/forms/dzP68BoWeT22iKMf1).
+
+## What we do
+
+We want to **empower college students to pursue careers in using technology for social good**, and we do a lot to that end:
+
+- On **[the Coding it Forward blog]({{ site.external.medium }})**, we feature highlights of impactful tech for social good clubs and projects, interviews with student and professional leaders in the field, and analysis of major news stories and trends.
+- Our **[mailing list](https://groups.google.com/forum/#!forum/coding-it-forward)**, with over 200 subscribers, is a space for students, organizations, and professionals who use tech for social good to connect and learn from each other. It's also a space for sharing events or job/internship opportunities, finding teammates for social impact tech projects, and getting career advice from our community.
+- Members of our alliance **work on social impact tech projects**, whether on campus, at hackathons, or online. Our mailing list a prime place to find talented students to work with you!
+- We're compiling **spreadsheets of jobs, internships, and mentors** to share with the community — [join the mailing list](https://groups.google.com/forum/#!forum/coding-it-forward) to get access to them!
 
 ## A bit of background
 
