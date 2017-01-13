@@ -1,0 +1,10 @@
+---
+layout: default
+title: My page
+---
+
+<h2>Campus partners</h2>
+
+{% for partner in site.data.partners %}
+    <a href="{{ partner.url }}" target="_blank">{{ partner.name }}</a>, {{ partner.college }}
+{% endfor %}
