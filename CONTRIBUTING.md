@@ -1,0 +1,1 @@
+Feel free to [check out our todos board](https://github.com/CodingItForward/codingitforward.github.io/projects/1)! Find an issue that seems interesting, and you can comment on the issue that you'd like to work on it. Then feel free to fork the repository and make a pull request! We'll review it as fast as possible.
