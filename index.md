@@ -46,8 +46,7 @@ Want to know more? Feel free to email any or all of us!
 
 We proudly partner with these student organizations that use technology for social good. We work with them on projects, publicity, blog posts, and more.
 
-{% for partner in site.data.partners %}
-- [{{ partner.name }}]({{ partner.url }}), {{ partner.college }}
+{% for partner in site.data.partners %}- [{{ partner.name }}]({{ partner.url }}), {{ partner.college }}
 {% endfor %}
 
 If your student group is interested in becoming a Coding it Forward Partner, [fill out this quick form](https://goo.gl/forms/6REK9bPwf85dRUMD3) and we'll be in touch!
