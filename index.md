@@ -19,7 +19,7 @@ Sound exciting? If you're passionate about using technology for the greater good
 
 And much more!
 
-To get started, read and follow [our blog]({{ site.external.medium }}), and join our [mailing list]({{ site.external.mailing_list }}) to get special access to all our resources!
+To get started, read and follow [our blog]({{ site.external.medium }}), and join our [mailing list]({{ site.external.mailing_list }}) and [Facebook group](https://www.facebook.com/groups/230953293978006/) to get special access to all our resources!
 
 If you'd like to take a bigger role in Coding it Forward by working on projects, writing for our blog, or serving as a Coding it Forward Campus Ambassador, [fill out this application](https://goo.gl/forms/dzP68BoWeT22iKMf1).
 
