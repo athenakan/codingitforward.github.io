@@ -16,14 +16,15 @@
   <body>
     <section class="page-header">
 
-        <!-- <img src="assets/images/coding-it-forward-logo.jpg" class="header-image" /> -->
-
-      <h1 class="project-name">{{ site.title | default: site.github.repository_name }}</h1>
+      <h1 class="project-name">
+          {{ site.title | default: site.github.repository_name }}
+      </h1>
       <h2 class="project-tagline">{{ site.description | default: site.github.project_tagline }}</h2>
 
       <a href="{{ site.external.medium }}" class="btn">Read our blog</a>
       <a href="{{ site.external.mailing_list }}" class="btn">Join our mailing list</a>
       <a href="{{ site.external.facebook }}" class="btn">Join our Facebook group</a>
+      <a href="/fellowship" class="btn">Civic Digital Fellowship</a>
 
       <!-- {% if site.show_downloads %}
         <a href="{{ site.github.zip_url }}" class="btn">Download .zip</a>
