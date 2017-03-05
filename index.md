@@ -31,6 +31,7 @@ We want to **empower college students to pursue careers in using technology for 
 - Our **[mailing list](https://groups.google.com/forum/#!forum/coding-it-forward)**, with over 200 subscribers, is a space for students, organizations, and professionals who use tech for social good to connect and learn from each other. It's also a space for sharing events or job/internship opportunities, finding teammates for social impact tech projects, and getting career advice from our community.
 - Members of our alliance **work on social impact tech projects**, whether on campus, at hackathons, or online. Our mailing list a prime place to find talented students to work with you!
 - We're compiling **spreadsheets of jobs, internships, and mentors** to share with the community — [join the mailing list](https://groups.google.com/forum/#!forum/coding-it-forward) to get access to them!
+- We're working with Census, the IRS, and Harvard professor (and former deputy CTO of the US) Nick Sinai on starting **an elite public-sector summer technology and data fellowship for college students**, the [Civic Digital Fellowship](/fellowship).
 
 ## A bit of background
 
