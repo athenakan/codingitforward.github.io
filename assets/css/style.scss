@@ -1,11 +1,39 @@
 ---
 ---
 
-// github pages theme
-@import "{{ site.theme }}";
+// CUSTOM STYLING
 
 // custom styles
 
 // .header-image {
 //     width: 100px;
 // }
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    padding-top: 70px;
+    margin-bottom: 80px;
+}
+
+img.mini-media {
+    width: 64px;
+    height: 64px;
+}
+
+
+.footer {
+    position: absolute;
+    bottom: 0;
+
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    width: 100%;
+
+    text-align: center;
+
+    margin-bottom: 0;
+}

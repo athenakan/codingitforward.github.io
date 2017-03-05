@@ -1,0 +1,118 @@
+---
+layout: default
+title: Home
+---
+
+<div class="row">
+    <div class="col-md-8">
+        <h1>Coding it Forward</h1>
+          <p class="lead"><em>We're a rebel alliance of young people using technology for social good. We're not coding to make the next food delivery app. We're coding to battle the tough problems in government, education, public health, and the like. We're coding to make the world a little bit better. We're Coding it Forward.</em></p>
+    </div>
+    <div class="col-md-4 hidden-sm hidden-xs">
+        <div class="row">
+            <div class="col-md-4">
+                <a href="https://www.facebook.com/groups/230953293978006/"><i class="fa fa-facebook-official fa-5x" aria-hidden="true"></i></a>
+            </div>
+            <div class="col-md-4">
+                <a href="https://blog.codingitforward.com/"><i class="fa fa-medium fa-5x" aria-hidden="true"></i></a>
+            </div>
+            <div class="col-md-4">
+                <a href="https://groups.google.com/forum/#!forum/coding-it-forward"><i class="fa fa-envelope fa-5x" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<h2>What we do</h2>
+
+<p class="lead">
+    Our community of <strong>over 400</strong> talented young people and professional mentors works hard to empower the next generation to pursue careers using technology for social good. <a href="https://www.facebook.com/groups/230953293978006/" target="_blank">Join the alliance</a> to get access to all our resources:
+</p>
+
+<div class="row">
+    <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+          <img src="/assets/images/cards/usds.png" class="img-responsive img-rounded">
+          <div class="caption">
+            <h3>Mentorship</h3>
+            <p>Our mentors include the former deputy CTO of the US and the founder of the US Digital Service. Join us to get in touch with them!</p>
+          </div>
+        </div>
+    </div>
+
+    <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+          <img src="/assets/images/cards/unsplash-job.jpg" class="img-responsive img-rounded">
+          <div class="caption">
+            <h3>Jobs and internships</h3>
+            <p>We've compiled a list of 30+ jobs and internships with startups, nonprofits, and governments that use technology for social good. Join our Facebook group to see the full list!</p>
+
+            <p>
+                <a href="/fellowship" class="btn btn-primary" role="button">Civic Digital Fellowship</a>
+                <a href="https://www.facebook.com/groups/230953293978006/" class="btn btn-default" role="button">Join the group</a>
+                <a href="https://blog.codingitforward.com/want-to-use-tech-for-social-good-this-summer-here-are-20-job-opportunities-df7d9b6659e5" class="btn btn-default" role="button">List of 20+ startups</a>
+            </p>
+          </div>
+        </div>
+    </div>
+
+    <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+          <img src="/assets/images/cards/unsplash-coding.jpg" class="img-responsive img-rounded">
+          <div class="caption">
+            <h3>Social impact tech projects</h3>
+            <p>Find ideas for projects that make the world better and find talented people to work on them with. We even send teams to hackathons to work on these! Join our Facebook group to get access.</p>
+            <p><a href="https://www.facebook.com/groups/230953293978006/" class="btn btn-primary" role="button">Join the Facebook group</a></p>
+          </div>
+        </div>
+    </div>
+</div>
+
+<a href="https://www.facebook.com/groups/230953293978006/" class="btn btn-lg btn-block btn-primary">Join Coding it Forward</a>
+
+<div class="row">
+    <div class="col-md-6">
+        <h2>People</h2>
+
+        <p>
+            Our founders are a team of Harvard students passionate about technology for social good.
+        </p>
+          {% for person in site.data.people %}
+            <div class="media">
+              <div class="media-left">
+                <a href="{{ person.url }}">
+                  <img class="media-object img-circle mini-media" src="/assets/images/people/{{ person.image }}" alt="{{ person.name}}, {{ person.bio }}">
+                </a>
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">{{ person.name }}</h4>
+                <p>
+                    {{ person.bio }} <br />
+                    {{ person.email }}
+                </p>
+              </div>
+            </div>
+          {% endfor %}
+
+        <br />
+
+        <p>
+            <a href="https://www.facebook.com/groups/230953293978006/">Meet the other hundreds of members of the rebel alliance on our Facebook group!</a>
+        </p>
+    </div>
+    <div class="col-md-6">
+        <h2>Partners</h2>
+
+        <p>
+            We proudly partner with these student organizations that use technology for social good. We work with them on projects, publicity, articles, and more.
+        </p>
+
+        <ul>
+            {% for partner in site.data.partners %}
+                <li>
+                    <a href="{{ partner.url }}">{{ partner.name }}</a>, {{ partner.college }}
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
