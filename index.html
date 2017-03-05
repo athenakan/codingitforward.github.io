@@ -70,20 +70,49 @@ title: Home
 
 <a href="https://www.facebook.com/groups/230953293978006/" class="btn btn-lg btn-block btn-primary">Join Coding it Forward</a>
 
+<div class="row">
+    <div class="col-md-6">
+        <h2>People</h2>
 
-<h2 id="a-bit-of-background">A bit of background</h2>
-<p>Our cofounders are a team of Harvard computer scientists passionate about using technology for social good.</p>
-<ul>
-  <li><a href="http://hathix.com">Neel Mehta</a>, neelmehta [at] college [dot] harvard [dot] edu</li>
-  <li><a href="http://athenakan.com">Athena Kan</a>, athenakan [at] college [dot] harvard [dot] edu</li>
-  <li><a href="https://medium.com/@chriskuang">Chris Kuang</a>, ckuang [at] college [dot] harvard [dot] edu</li>
-</ul>
-<p>Want to know more? Feel free to email any or all of us!</p>
-<h2 id="coding-it-forward-partners">Coding it Forward Partners</h2>
-<p>We proudly partner with these student organizations that use technology for social good. We work with them on projects, publicity, blog posts, and more.</p>
-<p>{% for partner in site.data.partners %}- <a href="{{%20partner.url%20}}">{{ partner.name }}</a>, {{ partner.college }} {% endfor %}</p>
-<p>If your student group is interested in becoming a Coding it Forward Partner, <a href="https://goo.gl/forms/6REK9bPwf85dRUMD3">fill out this quick form</a> and we'll be in touch!</p>
-<!--
-    TODO: use bootstrap so we can have some a nice grid system and can show these images
-    <img src="assets/images/partners/harvard-open-data-project.png" width="200">
--->
+        <p>
+            Our founders are a team of Harvard students passionate about technology for social good.
+        </p>
+          {% for person in site.data.people %}
+            <div class="media">
+              <div class="media-left">
+                <a href="{{ person.url }}">
+                  <img class="media-object img-circle mini-media" src="/assets/images/people/{{ person.image }}" alt="{{ person.name}}, {{ person.bio }}">
+                </a>
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">{{ person.name }}</h4>
+                <p>
+                    {{ person.bio }} <br />
+                    {{ person.email }}
+                </p>
+              </div>
+            </div>
+          {% endfor %}
+
+        <br />
+
+        <p>
+            <a href="https://www.facebook.com/groups/230953293978006/">Meet the other hundreds of members of the rebel alliance on our Facebook group!</a>
+        </p>
+    </div>
+    <div class="col-md-6">
+        <h2>Partners</h2>
+
+        <p>
+            We proudly partner with these student organizations that use technology for social good. We work with them on projects, publicity, articles, and more.
+        </p>
+
+        <ul>
+            {% for partner in site.data.partners %}
+                <li>
+                    <a href="{{ partner.url }}">{{ partner.name }}</a>, {{ partner.college }}
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
