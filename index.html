@@ -1,0 +1,66 @@
+---
+layout: default
+title: Home
+---
+
+<div class="row">
+    <div class="col-md-8">
+        <h1>Coding it Forward</h1>
+          <p class="lead"><em>We're a rebel alliance of young people using technology for social good. We're not coding to make the next food delivery app. We're coding to battle the tough problems in government, education, public health, and the like. We're coding to make the world a little bit better. We're Coding it Forward.</em></p>
+    </div>
+    <div class="col-md-4 hidden-sm hidden-xs">
+        <div class="row">
+            <div class="col-md-4">
+                <a href="https://www.facebook.com/groups/230953293978006/"><i class="fa fa-facebook-official fa-5x" aria-hidden="true"></i></a>
+            </div>
+            <div class="col-md-4">
+                <a href="https://blog.codingitforward.com/"><i class="fa fa-medium fa-5x" aria-hidden="true"></i></a>
+            </div>
+            <div class="col-md-4">
+                <a href="https://groups.google.com/forum/#!forum/coding-it-forward"><i class="fa fa-envelope fa-5x" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<h2>What we do</h2>
+
+<h2 id="join-the-alliance">Join the alliance</h2>
+<p>Sound exciting? If you're passionate about using technology for the greater good, you've just found a like-minded community that'll offer you:</p>
+<ul>
+  <li><strong>Job and internship opportunities</strong> from the nation's top schools.</li>
+  <li>Connections with our <strong>mentors</strong>, including the former deputy CTO of the US and the founder of the <a href="https://www.usds.gov/">United States Digital Service</a>.</li>
+  <li>Opportunities to work on technology and social impact <strong>projects</strong> with students at top schools.</li>
+  <li>A forum to learn from other top students in the field.</li>
+</ul>
+<p>And much more!</p>
+<p>To get started, read and follow <a href="{{%20site.external.medium%20}}">our blog</a>, and join our <a href="{{%20site.external.mailing_list%20}}">mailing list</a> and <a href="https://www.facebook.com/groups/230953293978006/">Facebook group</a> to get
+  special access to all our resources!</p>
+<p>If you'd like to take a bigger role in Coding it Forward by working on projects, writing for our blog, or serving as a Coding it Forward Campus Ambassador, <a href="https://goo.gl/forms/dzP68BoWeT22iKMf1">fill out this application</a>.</p>
+<h2 id="what-we-do">What we do</h2>
+<p>We want to <strong>empower college students to pursue careers in using technology for social good</strong>, and we do a lot to that end:</p>
+<ul>
+  <li>On <strong><a href="{{%20site.external.medium%20}}">the Coding it Forward blog</a></strong>, we feature highlights of impactful tech for social good clubs and projects, interviews with student and professional leaders in the field, and analysis of major
+    news stories and trends.</li>
+  <li>Our <strong><a href="https://groups.google.com/forum/#!forum/coding-it-forward">mailing list</a></strong>, with over 200 subscribers, is a space for students, organizations, and professionals who use tech for social good to connect and learn from each
+    other. It's also a space for sharing events or job/internship opportunities, finding teammates for social impact tech projects, and getting career advice from our community.</li>
+  <li>Members of our alliance <strong>work on social impact tech projects</strong>, whether on campus, at hackathons, or online. Our mailing list a prime place to find talented students to work with you!</li>
+  <li>We're compiling <strong>spreadsheets of jobs, internships, and mentors</strong> to share with the community — <a href="https://groups.google.com/forum/#!forum/coding-it-forward">join the mailing list</a> to get access to them!</li>
+  <li>We're working with Census, the IRS, and Harvard professor (and former deputy CTO of the US) Nick Sinai on starting <strong>an elite public-sector summer technology and data fellowship for college students</strong>, the <a href="/fellowship">Civic Digital Fellowship</a>.</li>
+</ul>
+<h2 id="a-bit-of-background">A bit of background</h2>
+<p>Our cofounders are a team of Harvard computer scientists passionate about using technology for social good.</p>
+<ul>
+  <li><a href="http://hathix.com">Neel Mehta</a>, neelmehta [at] college [dot] harvard [dot] edu</li>
+  <li><a href="http://athenakan.com">Athena Kan</a>, athenakan [at] college [dot] harvard [dot] edu</li>
+  <li><a href="https://medium.com/@chriskuang">Chris Kuang</a>, ckuang [at] college [dot] harvard [dot] edu</li>
+</ul>
+<p>Want to know more? Feel free to email any or all of us!</p>
+<h2 id="coding-it-forward-partners">Coding it Forward Partners</h2>
+<p>We proudly partner with these student organizations that use technology for social good. We work with them on projects, publicity, blog posts, and more.</p>
+<p>{% for partner in site.data.partners %}- <a href="{{%20partner.url%20}}">{{ partner.name }}</a>, {{ partner.college }} {% endfor %}</p>
+<p>If your student group is interested in becoming a Coding it Forward Partner, <a href="https://goo.gl/forms/6REK9bPwf85dRUMD3">fill out this quick form</a> and we'll be in touch!</p>
+<!--
+    TODO: use bootstrap so we can have some a nice grid system and can show these images
+    <img src="assets/images/partners/harvard-open-data-project.png" width="200">
+-->
