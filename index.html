@@ -112,7 +112,7 @@ title: Home
         <ul>
             {% for partner in site.data.partners %}
                 <li>
-                    <a href="{{ partner.url }}">{{ partner.name }}</a>, {{ partner.college }}
+                    <a href="{{ partner.url }}">{{ partner.name }}</a>, {{ partner.college.short }}
                 </li>
             {% endfor %}
         </ul>

@@ -1,0 +1,25 @@
+---
+layout: default
+title: Partners
+---
+
+<h1>Coding it Forward Partners</h1>
+
+<p>We proudly partner with these student organizations that use technology for social good. We work with them on projects, publicity, articles, and more.</p>
+
+{% for partner in site.data.partners %}
+<div class="media">
+  <div class="media-left">
+    <a href="{{ partner.url }}">
+      <img class="media-object img-circle mini-media" src="/assets/images/partners/{{ partner.image }}" alt="{{ partner.name}}, {{ partner.college }}">
+    </a>
+  </div>
+  <div class="media-body">
+    <h4 class="media-heading"><a href="{{ partner.url }}">{{ partner.name }}</a></h4>
+    <p>
+        {{ partner.college.full }} <!-- <br />
+        Contact: {{partner.contact.name}} &lt;<a href="mailto:{{partner.contact.email}}">{{partner.contact.email}}</a>&gt; -->
+    </p>
+  </div>
+</div>
+{% endfor %}

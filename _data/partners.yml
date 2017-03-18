@@ -1,8 +1,12 @@
 -   name: Harvard Open Data Project
     url: http://harvard-open-data-project.github.io/
-    college: Harvard
+    college:
+      short: Harvard
+      full: Harvard University
     image: harvard-open-data-project.png
 -   name: Envision
     url: http://www.envisionfuture.org/
-    college: Princeton
+    college:
+      short: Princeton
+      full: Princeton University
     image: envision.png
