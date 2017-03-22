@@ -1,8 +1,26 @@
 -   name: Harvard Open Data Project
     url: http://harvard-open-data-project.github.io/
-    college: Harvard
-    image: harvard-open-data-project.png
+    college:
+      short: Harvard
+      full: Harvard University
+    image: hodp-logo-square.png
+    contact:
+      name: Neel Mehta
+      email: neelmehta@college.harvard.edu
 -   name: Envision
     url: http://www.envisionfuture.org/
-    college: Princeton
+    college:
+      short: Princeton
+      full: Princeton University
     image: envision.png
+-   name: Code4Good
+    college:
+      short: Yale
+      full: Yale University
+-   name: Coding it Forward Cornell
+    college:
+      short: Cornell
+      full: Cornell University
+    contact:
+      name: Aidan Fitzgerald
+      email: acf67@cornell.edu
