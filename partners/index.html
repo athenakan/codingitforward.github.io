@@ -19,8 +19,10 @@ title: Partners
   <div class="media-body">
     <h4 class="media-heading">{% if partner.url %}<a href="{{ partner.url }}">{{ partner.name }}</a>{% else %}{{ partner.name }}{% endif %}</h4>
     <p>
+        {% if partner.college and partner.college.full %}
         {{ partner.college.full }}
-        {% if partner.contact %}
+        {% endif %}
+        {% if partner.contact and partner.contact.name and partner.contact.email %}
         <br />
         Contact: {{partner.contact.name}} &lt;<a href="mailto:{{partner.contact.email}}">{{partner.contact.email}}</a>&gt;
         {% endif %}
