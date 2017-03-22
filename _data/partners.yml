@@ -3,7 +3,10 @@
     college:
       short: Harvard
       full: Harvard University
-    image: harvard-open-data-project.png
+    image: hodp-logo-square.png
+    contact:
+      name: Neel Mehta
+      email: neelmehta@college.harvard.edu
 -   name: Envision
     url: http://www.envisionfuture.org/
     college:
@@ -13,11 +16,11 @@
 -   name: Code4Good
     college:
       short: Yale
-      long: Yale University
+      full: Yale University
 -   name: Coding it Forward Cornell
     college:
       short: Cornell
-      long: Cornell University
+      full: Cornell University
     contact:
       name: Aidan Fitzgerald
       email: acf67@cornell.edu
