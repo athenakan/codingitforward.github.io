@@ -10,3 +10,11 @@
       short: Princeton
       full: Princeton University
     image: envision.png
+-   name: Code4Good
+    college:
+      short: Yale
+      long: Yale University
+-   name: Coding it Forward Cornell
+    college:
+      short: Cornell
+      long: Cornell University

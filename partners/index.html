@@ -10,15 +10,20 @@ title: Partners
 {% for partner in site.data.partners %}
 <div class="media">
   <div class="media-left">
+    {% if partner.image %}
     <a href="{{ partner.url }}">
-      <img class="media-object img-circle mini-media" src="/assets/images/partners/{{ partner.image }}" alt="{{ partner.name}}, {{ partner.college }}">
+      <img class="media-object img-circle mini-media" src="/assets/images/partners/{{ partner.image }}" alt="{{ partner.name}}, {{ partner.college.full }}">
     </a>
+    {% endif %}
   </div>
   <div class="media-body">
-    <h4 class="media-heading"><a href="{{ partner.url }}">{{ partner.name }}</a></h4>
+    <h4 class="media-heading">{% if partner.url %}<a href="{{ partner.url }}">{{ partner.name }}</a>{% else %}{{ partner.name }}{% endif %}</h4>
     <p>
-        {{ partner.college.full }} <!-- <br />
-        Contact: {{partner.contact.name}} &lt;<a href="mailto:{{partner.contact.email}}">{{partner.contact.email}}</a>&gt; -->
+        {{ partner.college.full }}
+        {% if partner.contact %}
+        <br />
+        Contact: {{partner.contact.name}} &lt;<a href="mailto:{{partner.contact.email}}">{{partner.contact.email}}</a>&gt;
+        {% endif %}
     </p>
   </div>
 </div>
