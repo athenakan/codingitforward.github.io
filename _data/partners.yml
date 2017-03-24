@@ -17,6 +17,9 @@
     college:
       short: Yale
       full: Yale University
+    contact:
+      name: Emon Datta
+      email: emon.datta@yale.edu
 -   name: Coding it Forward Cornell
     college:
       short: Cornell
