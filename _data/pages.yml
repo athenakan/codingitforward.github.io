@@ -3,7 +3,9 @@ main:
         url: /
     -   name: Fellowship
         url: /fellowship/
+    -   name: Partners
+        url: /partners/
     -   name: Blog
         url: https://blog.codingitforward.com
-    -   name: Facebook Group
+    -   name: Facebook
         url: https://www.facebook.com/groups/230953293978006/
