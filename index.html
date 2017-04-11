@@ -127,8 +127,7 @@ title: Home
         </p>
 
         <ul>
-          {% for i in (0..3) %}
-            {% assign partner = site.data.partners[i] %}
+          {% for partner in site.data.partners %}
                 <li>
                     <a href="{{ partner.url }}">{{ partner.name }}</a>, {{ partner.college.short }}
                 </li>
