@@ -2,67 +2,104 @@
 layout: default
 title: Pipeline Program
 description: Coding it Forward's Pipeline Program connects top students with unpaid technology and data science internships in federal agencies.
+
+scripts:
+    -   /assets/bootstrap/js/bootstrap.min.js
 ---
 
 <div class="container">
     <br />
 
     <div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
-    {% for posting in site.data.pipeline %}
-        <div>
-            <h2>{{ posting.agency.long }} ({{ posting.agency.short }})</h2>
 
-            <p class="lead">
-                The {{ posting.agency.short }} will be hiring <strong class="text-success">{{ posting.positions.number }} technology and data science interns for summer 2017.</strong> {{ posting.positions.eligibility }}
-            </p>
 
-            <p>{{ posting.program_structure }}</p>
 
-            <hr />
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs" role="tablist">
+            {% for posting in site.data.pipeline %}
+                <li
+                    {% if forloop.first %}
+                        class="active"
+                    {% endif %}
+                >
+                    <a href="#tab-{{ posting.agency.short }}" role="tab" data-toggle="tab">
+                        {{ posting.agency.long }}
+                    </a>
+                </li>
+            {% endfor %}
+          </ul>
 
-            <div class="row">
-                <div class="col-sm-4">
-                    <h4 class="text-primary"><i class="fa fa-calendar"></i> Dates</h4>
-                    <p>{{ posting.dates }}</p>
-                </div>
-                <div class="col-sm-4">
-                    <h4 class="text-primary"><i class="fa fa-map-marker"></i> Locations</h4>
+          <!-- Tab panes -->
+          <div class="tab-content">
 
-                    <ul>
-                        {% for location in posting.locations %}
-                            <li>
-                                {{ location }}
-                            </li>
-                        {% endfor %}
-                    </ul>
-                </div>
-                <div class="col-sm-4">
-                    <h4 class="text-primary"><i class="fa fa-suitcase"></i> Benefits</h4>
-                    <p>
-                        {% if posting.paid == false %}
-                            This position is unpaid. Applicants are encouraged to seek outside funding from their home university.
-                        {% else %}
-                            This is a paid internship.
-                        {% endif %}
-                    </p>
-                </div>
-            </div>
+              {% for posting in site.data.pipeline %}
+                  <div role="tabpanel" id="tab-{{ posting.agency.short}}"
+                    {% if forloop.first %}
+                        class="tab-pane active"
+                    {% else %}
+                        class="tab-pane"
+                    {% endif %}
+                  >
+                      <h2>{{ posting.agency.long }} ({{ posting.agency.short }})</h2>
 
-            <hr />
+                      <p class="lead">
+                          The {{ posting.agency.short }} will be hiring <strong class="text-success">{{ posting.positions.number }} technology and data science interns for summer 2017.</strong> {{ posting.positions.eligibility }}
+                      </p>
 
-            <h3>Projects</h3>
-            <p>
-                 {{ posting.hiring_process }}
-            </p>
-            <ol>
-                {% for project in posting.projects %}
-                    <li>
-                        <strong>{{ project.name }}</strong>: {{ project.description }}
-                    </li>
-                {% endfor %}
-            </ol>
-        </div>
-    {% endfor %}
+                      <p>{{ posting.program_structure }}</p>
+
+                      <hr />
+
+                      <div class="row">
+                          <div class="col-sm-4">
+                              <h4 class="text-primary"><i class="fa fa-calendar"></i> Dates</h4>
+                              <p>{{ posting.dates }}</p>
+                          </div>
+                          <div class="col-sm-4">
+                              <h4 class="text-primary"><i class="fa fa-map-marker"></i> Locations</h4>
+
+                              <ul>
+                                  {% for location in posting.locations %}
+                                      <li>
+                                          {{ location }}
+                                      </li>
+                                  {% endfor %}
+                              </ul>
+                          </div>
+                          <div class="col-sm-4">
+                              <h4 class="text-primary"><i class="fa fa-suitcase"></i> Benefits</h4>
+                              <p>
+                                  {% if posting.paid == false %}
+                                      This position is unpaid. Applicants are encouraged to seek outside funding from their home university.
+                                  {% else %}
+                                      This is a paid internship.
+                                  {% endif %}
+                              </p>
+                          </div>
+                      </div>
+
+                      <hr />
+
+                      <h3>Projects</h3>
+                      <p>
+                           {{ posting.hiring_process }}
+                      </p>
+                      <ol>
+                          {% for project in posting.projects %}
+                              <li>
+                                  <strong>{{ project.name }}</strong>: {{ project.description }}
+                              </li>
+                          {% endfor %}
+                      </ol>
+                  </div>
+              {% endfor %}
+
+            <div role="tabpanel" class="tab-pane active" id="home">...</div>
+            <div role="tabpanel" class="tab-pane" id="profile">...</div>
+            <div role="tabpanel" class="tab-pane" id="messages">...</div>
+            <div role="tabpanel" class="tab-pane" id="settings">...</div>
+          </div>
+
     </div>
 
 
