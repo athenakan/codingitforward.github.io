@@ -23,17 +23,19 @@ scripts:
         Students: apply now!
     </a>
 
-    <h2>Host Agencies</h2>
 
-    <p>
-        We will be connecting students with internships at the following agencies:
-    </p>
 
     <br />
     <div class="row">
     <div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
 
+        <h2>Host Agencies</h2>
 
+        <p>
+            We will be connecting students with internships at the following agencies.
+        </p>
+
+        <br />
 
           <!-- Nav tabs -->
           <ul class="nav nav-tabs" role="tablist">
@@ -77,15 +79,11 @@ scripts:
                               <p>{{ posting.dates }}</p>
                           </div>
                           <div class="col-sm-4">
-                              <h4 class="text-primary"><i class="fa fa-map-marker"></i> Locations</h4>
+                              <h4 class="text-primary"><i class="fa fa-map-marker"></i> Location</h4>
 
-                              <ul>
-                                  {% for location in posting.locations %}
-                                      <li>
-                                          {{ location }}
-                                      </li>
-                                  {% endfor %}
-                              </ul>
+                              <p>
+                                  {{ posting.location }}
+                              </p>
                           </div>
                           <div class="col-sm-4">
                               <h4 class="text-primary"><i class="fa fa-suitcase"></i> Benefits</h4>
