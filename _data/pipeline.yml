@@ -5,8 +5,7 @@
         number: 2
         eligibility: All applicants are welcome.
     dates: To be announced.
-    locations:
-        -   EPA Headquarters, 1200 Pennsylvania Avenue NW, Washington, D.C. 20460
+    location: Washington, DC
     paid: false
     program_structure: |
         The EPA will provide mentorship, any necessary training, and the opportunity to attend meetings and other internal events to gain a better sense of the agency’s work. Interns will also be given the opportunity to showcase and present their work as the summer progresses.
@@ -29,10 +28,7 @@
         number: 6
         eligibility: Due to IRS hiring limitations, only Harvard students can apply.
     dates: 10 weeks, from 6/5 – 8/11
-    locations:
-        -   1111 Constitution Ave NW, Washington DC
-        -   77 K Street NE, Washington DC
-        -   New Carrollton Federal Building, Lanham, MD
+    location: Washington, DC and Lanham, MD
     paid: false
     program_structure: |
         The IRS is offering mentorship and cannot confirm speakers or workshops at this time but is open to the possibility.
