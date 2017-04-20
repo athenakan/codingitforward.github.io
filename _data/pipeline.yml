@@ -4,7 +4,7 @@
     positions:
         number: two # 2
         eligibility: All applicants are welcome.
-    dates: To be announced.
+    dates: 10 weeks, likely beginning in Mid-June
     location: Washington, DC
     paid: false
     program_structure: |
@@ -20,7 +20,7 @@
         -   name: Improve EPA Search
             description: Collect linkages between industry codes and regulations to later support visualizations and natural language queries that look for connections between our regulations and improvements in the environment. Script writing to help crawl web content might be a plus!
         -   name: Visualize EPA Data
-            description: Propose and/or create visualizations of EPA air, water and land data to help the public understand environmental conditions in their neighborhoods. Plain English and creativity, knowledge of data visualization tools would be helpful.
+            description: Propose and/or create visualizations of EPA air, water and land data to help the public understand environmental conditions in their neighborhoods. Language skills, creativity, and knowledge of data visualization tools would be helpful.
 -   agency:
         long: Internal Revenue Service
         short: IRS
