@@ -40,7 +40,7 @@
     projects:
         -   name: IRS.gov Relaunch
             description: Use agile product development methodologies and site performance data to help create the next version of IRS.gov. Skills with web development and agile methodologies are recommended.
-        -   name: Innovate IRS: 2017 Crowdsourcing Competition
+        -   name: "Innovate IRS: 2017 Crowdsourcing Competition"
             description: Plan, structure, and organize the IRS’s next crowdsourcing competition to get great ideas about improving IRS apps from the American people. Strong communication and organization skills are needed.
         -   name: IRS Nationwide Tax Forums
             description: Design a system for IRS employees to use to gather feedback from tax professionals at conferences across the country, and implement systems to analyze and visualize this data. Data science and visualization skills are recommended.
