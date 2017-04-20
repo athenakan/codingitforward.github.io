@@ -2,7 +2,7 @@
         long: Environmental Protection Agency
         short: EPA
     positions:
-        number: 2
+        number: two # 2
         eligibility: All applicants are welcome.
     dates: To be announced.
     location: Washington, DC
@@ -25,7 +25,7 @@
         long: Internal Revenue Service
         short: IRS
     positions:
-        number: 6
+        number: six # 6
         eligibility: Due to IRS hiring limitations, only Harvard students can apply.
     dates: 10 weeks, from 6/5 – 8/11
     location: Washington, DC and Lanham, MD
