@@ -1,11 +1,13 @@
 main:
-    -   name: Home
-        url: /
+    # -   name: Home
+    #     url: /
     -   name: Civic Digital Fellowship
         url: /fellowship/
     -   name: Partners
         url: /partners/
+    -   name: Pipeline
+        url: /pipeline/
     -   name: Blog
         url: https://blog.codingitforward.com
-    -   name: Facebook Group
+    -   name: Join
         url: https://www.facebook.com/groups/codingitforward
