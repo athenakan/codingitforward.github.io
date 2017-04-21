@@ -79,11 +79,29 @@ scripts:
                               <p>{{ posting.dates }}</p>
                           </div>
                           <div class="col-sm-4">
-                              <h4 class="text-primary"><i class="fa fa-map-marker"></i> Location</h4>
+                              <h4 class="text-primary"><i class="fa fa-map-marker"></i>
+                                  {% if posting.location %}
+                                    Location
+                                  {% else %}
+                                    Locations
+                                  {% endif %}
+                              </h4>
 
-                              <p>
-                                  {{ posting.location }}
-                              </p>
+                              {% if posting.location %}
+                                <p>
+                                    {{ posting.location }}
+                                </p>
+                              {% else %}
+                                <ul>
+                                    {% for location in posting.locations %}
+                                        <li>
+                                            {{ location }}
+                                        </li>
+                                    {% endfor %}
+                                </ul>
+                              {% endif %}
+
+
                           </div>
                           <div class="col-sm-4">
                               <h4 class="text-primary"><i class="fa fa-suitcase"></i> Benefits</h4>
