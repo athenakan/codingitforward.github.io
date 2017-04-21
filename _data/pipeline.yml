@@ -1,51 +1,60 @@
--   agency:
-        long: Environmental Protection Agency
-        short: EPA
-    positions:
-        number: two # 2
-        eligibility: All applicants are welcome.
-    dates: 10 weeks, likely beginning in Mid-June
-    location: EPA Headquarters, 1200 Pennsylvania Avenue NW, Washington, D.C. 20460
-    paid: false
-    program_structure: |
-        The EPA will provide mentorship, any necessary training, and the opportunity to attend meetings and other internal events to gain a better sense of the agency’s work. Interns will also be given the opportunity to showcase and present their work as the summer progresses.
-    hiring_process: Interns will be matched with projects according to their interests. Below are some examples.
-    projects:
-        -   name: Data Visualization Dashboard
-            description: Use data visualization techniques to create data-driven products and analysis for the EPA and partners. Knowledge of data visualization concepts and tools is desirable as well as a willingness to wrangle with data and create a visually appealing product.
-        -   name: Accessible Maps and Geospatial Applications
-            description: Work to make EPA maps and applications more accessible to the public. Experience with cartographic or graphic design is desirable as is the willingness to create user guides or training materials.
-        -   name: Envirofacts Redesign User Interface
-            description: Help to modernize the look and feel of Envirofacts, an EPA tool with over 15 million pageviews a year. Strong UI/UX testing experience is a plus.
-        -   name: Improve EPA Search
-            description: Collect linkages between industry codes and regulations to later support visualizations and natural language queries that look for connections between our regulations and improvements in the environment. Script writing to help crawl web content might be a plus!
-        -   name: Visualize EPA Data
-            description: Propose and/or create visualizations of EPA air, water and land data to help the public understand environmental conditions in their neighborhoods. Language skills, creativity, and knowledge of data visualization tools would be helpful.
--   agency:
-        long: Internal Revenue Service
-        short: IRS
-    positions:
-        number: six # 6
-        eligibility: Due to IRS hiring limitations, only Harvard students can apply.
-    dates: 10 weeks, from 6/5 – 8/11
-    locations:
-        -   1111 Constitution Ave NW, Washington DC
-        -   77 K Street NE, Washington
-        -   New Carrollton Federal Building, Lanham, MD
-    paid: false
-    program_structure: |
-        The IRS is offering mentorship and cannot confirm speakers or workshops at this time but is open to the possibility.
-    hiring_process: The IRS is looking for one intern for each of the following projects.
-    projects:
-        -   name: IRS.gov Relaunch
-            description: Use agile product development methodologies and site performance data to help create the next version of IRS.gov. Skills with web development and agile methodologies are recommended.
-        -   name: "Innovate IRS: 2017 Crowdsourcing Competition"
-            description: Plan, structure, and organize the IRS’s next crowdsourcing competition to get great ideas about improving IRS apps from the American people. Strong communication and organization skills are needed.
-        -   name: IRS Nationwide Tax Forums
-            description: Design a system for IRS employees to use to gather feedback from tax professionals at conferences across the country, and implement systems to analyze and visualize this data. Data science and visualization skills are recommended.
-        -   name: IRS Affordable Care Act
-            description: Research the impact that the ACA’s employer insurance mandate has on the incomes of small employers. Data analysis and research skills are a plus.
-        -   name: IRS Earned Income Tax Credit (EITC) Wages vs Self-Employment Income
-            description: Research the effect of removing self-employment income from the Earned Income Tax Credit calculation. Data analysis and research skills are a plus.
-        -   name: Research, Applied Analytics, and Statistics
-            description: Use statistical models to analyze taxpayer responses to an IRS audit. Statistical training, research skills, and work ethic are recommended.
+confirmed:
+    -   agency:
+            long: Environmental Protection Agency
+            short: EPA
+        positions:
+            number: two # 2
+            eligibility: All applicants are welcome.
+        dates: 10 weeks, likely beginning in Mid-June
+        # we use `location` if there's just 1, and `locations` if there are multiple locations
+        location: EPA Headquarters, 1200 Pennsylvania Avenue NW, Washington, D.C. 20460
+        paid: false
+        program_structure: |
+            The EPA will provide mentorship, any necessary training, and the opportunity to attend meetings and other internal events to gain a better sense of the agency’s work. Interns will also be given the opportunity to showcase and present their work as the summer progresses.
+        hiring_process: Interns will be matched with projects according to their interests. Below are some examples.
+        projects:
+            -   name: Data Visualization Dashboard
+                description: Use data visualization techniques to create data-driven products and analysis for the EPA and partners. Knowledge of data visualization concepts and tools is desirable as well as a willingness to wrangle with data and create a visually appealing product.
+            -   name: Accessible Maps and Geospatial Applications
+                description: Work to make EPA maps and applications more accessible to the public. Experience with cartographic or graphic design is desirable as is the willingness to create user guides or training materials.
+            -   name: Envirofacts Redesign User Interface
+                description: Help to modernize the look and feel of Envirofacts, an EPA tool with over 15 million pageviews a year. Strong UI/UX testing experience is a plus.
+            -   name: Improve EPA Search
+                description: Collect linkages between industry codes and regulations to later support visualizations and natural language queries that look for connections between our regulations and improvements in the environment. Script writing to help crawl web content might be a plus!
+            -   name: Visualize EPA Data
+                description: Propose and/or create visualizations of EPA air, water and land data to help the public understand environmental conditions in their neighborhoods. Language skills, creativity, and knowledge of data visualization tools would be helpful.
+    -   agency:
+            long: Internal Revenue Service
+            short: IRS
+        positions:
+            number: six # 6
+            eligibility: Due to IRS hiring limitations, only Harvard students can apply.
+        dates: 10 weeks, from 6/5 – 8/11
+        locations:
+            -   1111 Constitution Ave NW, Washington DC
+            -   77 K Street NE, Washington
+            -   New Carrollton Federal Building, Lanham, MD
+        paid: false
+        program_structure: |
+            The IRS is offering mentorship and cannot confirm speakers or workshops at this time but is open to the possibility.
+        hiring_process: The IRS is looking for one intern for each of the following projects.
+        projects:
+            -   name: IRS.gov Relaunch
+                description: Use agile product development methodologies and site performance data to help create the next version of IRS.gov. Skills with web development and agile methodologies are recommended.
+            -   name: "Innovate IRS: 2017 Crowdsourcing Competition"
+                description: Plan, structure, and organize the IRS’s next crowdsourcing competition to get great ideas about improving IRS apps from the American people. Strong communication and organization skills are needed.
+            -   name: IRS Nationwide Tax Forums
+                description: Design a system for IRS employees to use to gather feedback from tax professionals at conferences across the country, and implement systems to analyze and visualize this data. Data science and visualization skills are recommended.
+            -   name: IRS Affordable Care Act
+                description: Research the impact that the ACA’s employer insurance mandate has on the incomes of small employers. Data analysis and research skills are a plus.
+            -   name: IRS Earned Income Tax Credit (EITC) Wages vs Self-Employment Income
+                description: Research the effect of removing self-employment income from the Earned Income Tax Credit calculation. Data analysis and research skills are a plus.
+            -   name: Research, Applied Analytics, and Statistics
+                description: Use statistical models to analyze taxpayer responses to an IRS audit. Statistical training, research skills, and work ethic are recommended.
+tentative:
+    -   Centers for Disease Control (CDC)
+    -   National Institute of Standards and Technology (NIST)
+    -   Department of Veterans Affairs (VA)
+    -   Department of State
+    -   US Special Operations Command (USSOCOM)
+    -   The OpenGov Foundation

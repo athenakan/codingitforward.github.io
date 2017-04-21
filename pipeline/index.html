@@ -39,7 +39,7 @@ scripts:
 
           <!-- Nav tabs -->
           <ul class="nav nav-tabs" role="tablist">
-            {% for posting in site.data.pipeline %}
+            {% for posting in site.data.pipeline.confirmed %}
                 <li
                     {% if forloop.first %}
                         class="active"
@@ -50,12 +50,17 @@ scripts:
                     </a>
                 </li>
             {% endfor %}
+            <li>
+                <a href="#tab-extra" role="tab" data-toggle="tab">
+                    Other Agencies
+                </a>
+            </li>
           </ul>
 
           <!-- Tab panes -->
           <div class="tab-content">
 
-              {% for posting in site.data.pipeline %}
+              {% for posting in site.data.pipeline.confirmed %}
                   <div role="tabpanel" id="tab-{{ posting.agency.short}}"
                     {% if forloop.first %}
                         class="tab-pane active"
@@ -132,11 +137,32 @@ scripts:
                       <hr />
 
                       <a href="https://harvard.az1.qualtrics.com/jfe/form/SV_79TmnTIcE5MQJNP" target="_blank" class="btn btn-primary btn-block">Apply now</a>
-                      <br />
-                      <br />
                   </div>
               {% endfor %}
+
+              <div role="tabpanel" id="tab-extra" class="tab-pane">
+                  <br />
+                  <p class="lead">
+                      We are working to finalize internship positions at the following agencies:
+                  </p>
+                  <ul>
+                    {% for agency in site.data.pipeline.tentative %}
+                        <li>
+                            {{ agency }}
+                        </li>
+                    {% endfor %}
+                  </ul>
+
+                  <p>
+                      If you're interested in applying to any of these agencies, <a href="https://harvard.az1.qualtrics.com/jfe/form/SV_79TmnTIcE5MQJNP" target="_blank">apply now</a> and check the box that says you wish to be considered for positions at other agencies.
+                  </p>
+
+                  <a href="https://harvard.az1.qualtrics.com/jfe/form/SV_79TmnTIcE5MQJNP" target="_blank" class="btn btn-primary btn-block">Apply now</a>
+              </div>
           </div>
+
+          <br />
+          <br />
 
     </div>
     </div>
