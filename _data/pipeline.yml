@@ -5,7 +5,7 @@ confirmed:
         positions:
             number: two # 2
             eligibility: All applicants are welcome.
-        dates: 10 weeks, likely beginning in Mid-June
+        dates: 10 weeks, likely beginning in mid-June
         # we use `location` if there's just 1, and `locations` if there are multiple locations
         location: EPA Headquarters, 1200 Pennsylvania Avenue NW, Washington, D.C. 20460
         paid: false
@@ -51,10 +51,26 @@ confirmed:
                 description: Research the effect of removing self-employment income from the Earned Income Tax Credit calculation. Data analysis and research skills are a plus.
             -   name: Research, Applied Analytics, and Statistics
                 description: Use statistical models to analyze taxpayer responses to an IRS audit. Statistical training, research skills, and work ethic are recommended.
+    -   agency:
+            long: Department of Veterans Affairs
+            short: VA
+        positions:
+            number: one to three
+            eligibility: All applicants are welcome.
+        dates: 10 weeks, likely beginning in mid-June
+        location: Department of Veterans Affairs, 425 I St NW, Washington, DC 20001
+        paid: false
+        # program_structure
+        hiring_process: "The Department of Veterans Affairs is working on being able to have 1-3 interns for summer 2017. More information coming soon! Some example projects include:"
+        projects:
+            -   name: Predictive Decision Drafting
+                description: Drawing on a corpus of over a million past decisions, use natural language processing and machine learning to identify ways of surfacing useful information and reusable text to attorneys as they draft decisions.
+            -   name: More
+                description: Coming soon!
+
 tentative:
     -   Centers for Disease Control (CDC)
     -   National Institute of Standards and Technology (NIST)
-    -   Department of Veterans Affairs (VA)
     -   Department of State
     -   US Special Operations Command (USSOCOM)
     -   The OpenGov Foundation
