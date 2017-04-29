@@ -54,19 +54,18 @@ confirmed:
     -   agency:
             long: Department of Veterans Affairs
             short: VA
-        positions:
-            number: one to three
-            eligibility: All applicants are welcome.
-        dates: 10 weeks, likely beginning in mid-June
-        location: Department of Veterans Affairs, 425 I St NW, Washington, DC 20001
-        paid: false
-        # program_structure
-        hiring_process: "The Department of Veterans Affairs is working on being able to have 1-3 interns for summer 2017. More information coming soon! Some example projects include:"
-        projects:
-            -   name: Predictive Decision Drafting
-                description: Drawing on a corpus of over a million past decisions, use natural language processing and machine learning to identify ways of surfacing useful information and reusable text to attorneys as they draft decisions.
-            -   name: More
-                description: Coming soon!
+        force_exact_text: |
+            <p>The Department of Veterans Affairs is working on being able to have 1-3 interns  for summer 2017.  More information coming soon!<p>
+
+            <p>Dates
+            10 week, likely beginning in mid June</p>
+            <p>Location
+            Department of Veterans Affairs, 425 I St NW, Washington, DC 20001</p>
+            <p>Benefits
+            TBD</p>
+            <p>Projects
+            1. Predictive Decision Drafting: Drawing on a corpus of over a million past decisions, use natural language processing and machine learning to identify ways of surfacing useful information and reusable text to attorneys as they draft decisions.
+            2.  More coming soon!</p>
 
 tentative:
     -   Centers for Disease Control (CDC)

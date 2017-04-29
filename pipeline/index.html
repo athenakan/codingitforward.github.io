@@ -75,71 +75,75 @@ scripts:
                   >
                       <h2>{{ posting.agency.long }} ({{ posting.agency.short }})</h2>
 
-                      <p class="lead">
-                          The {{ posting.agency.short }} will be hiring <strong class="text-success">{{ posting.positions.number }} technology and data science interns for summer 2017.</strong> {{ posting.positions.eligibility }}
-                      </p>
+                      {% if posting.force_exact_text %}
+                        {{ posting.force_exact_text }}
+                      {% else %}
+                          <p class="lead">
+                              The {{ posting.agency.short }} will be hiring <strong class="text-success">{{ posting.positions.number }} technology and data science interns for summer 2017.</strong> {{ posting.positions.eligibility }}
+                          </p>
 
-                      <p>{{ posting.program_structure }}</p>
+                          <p>{{ posting.program_structure }}</p>
 
-                      <hr />
+                          <hr />
 
-                      <div class="row">
-                          <div class="col-sm-4">
-                              <h4 class="text-primary"><i class="fa fa-calendar"></i> Dates</h4>
-                              <p>{{ posting.dates }}</p>
-                          </div>
-                          <div class="col-sm-4">
-                              <h4 class="text-primary"><i class="fa fa-map-marker"></i>
+                          <div class="row">
+                              <div class="col-sm-4">
+                                  <h4 class="text-primary"><i class="fa fa-calendar"></i> Dates</h4>
+                                  <p>{{ posting.dates }}</p>
+                              </div>
+                              <div class="col-sm-4">
+                                  <h4 class="text-primary"><i class="fa fa-map-marker"></i>
+                                      {% if posting.location %}
+                                        Location
+                                      {% else %}
+                                        Locations
+                                      {% endif %}
+                                  </h4>
+
                                   {% if posting.location %}
-                                    Location
+                                    <p>
+                                        {{ posting.location }}
+                                    </p>
                                   {% else %}
-                                    Locations
+                                    <ul>
+                                        {% for location in posting.locations %}
+                                            <li>
+                                                {{ location }}
+                                            </li>
+                                        {% endfor %}
+                                    </ul>
                                   {% endif %}
-                              </h4>
-
-                              {% if posting.location %}
-                                <p>
-                                    {{ posting.location }}
-                                </p>
-                              {% else %}
-                                <ul>
-                                    {% for location in posting.locations %}
-                                        <li>
-                                            {{ location }}
-                                        </li>
-                                    {% endfor %}
-                                </ul>
-                              {% endif %}
 
 
+                              </div>
+                              <div class="col-sm-4">
+                                  <h4 class="text-primary"><i class="fa fa-suitcase"></i> Benefits</h4>
+                                  <p>
+                                      {% if posting.paid == false %}
+                                          This position is unpaid. Applicants are encouraged to seek outside funding from their home university.
+                                      {% else %}
+                                          This is a paid internship.
+                                      {% endif %}
+                                  </p>
+                              </div>
                           </div>
-                          <div class="col-sm-4">
-                              <h4 class="text-primary"><i class="fa fa-suitcase"></i> Benefits</h4>
-                              <p>
-                                  {% if posting.paid == false %}
-                                      This position is unpaid. Applicants are encouraged to seek outside funding from their home university.
-                                  {% else %}
-                                      This is a paid internship.
-                                  {% endif %}
-                              </p>
-                          </div>
-                      </div>
 
-                      <hr />
+                          <hr />
 
-                      <h3>Projects</h3>
-                      <p>
-                           {{ posting.hiring_process }}
-                      </p>
-                      <ol>
-                          {% for project in posting.projects %}
-                              <li>
-                                  <strong>{{ project.name }}</strong>: {{ project.description }}
-                              </li>
-                          {% endfor %}
-                      </ol>
+                          <h3>Projects</h3>
+                          <p>
+                               {{ posting.hiring_process }}
+                          </p>
+                          <ol>
+                              {% for project in posting.projects %}
+                                  <li>
+                                      <strong>{{ project.name }}</strong>: {{ project.description }}
+                                  </li>
+                              {% endfor %}
+                          </ol>
 
-                      <hr />
+                          <hr />
+                      {% endif %}
 
                       <a href="https://harvard.az1.qualtrics.com/jfe/form/SV_79TmnTIcE5MQJNP" target="_blank" class="btn btn-primary btn-block">Apply now</a>
                   </div>
