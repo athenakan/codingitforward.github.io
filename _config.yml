@@ -16,4 +16,12 @@ external:
 # Bootswatch theme
 bs_theme: readable
 
+# Necessary gems
+gems:
+    - jekyll-redirect-from
+
+# Apparently GitHub pages uses this; include gems from above here too
+whitelist:
+  - jekyll-redirect-from
+
 # other settings
