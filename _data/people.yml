@@ -1,15 +1,25 @@
--   name: Neel Mehta
-    bio: Harvard 2018
-    email: neelmehta [at] college [dot] harvard [dot] edu
-    image: neel-mehta.jpg
-    url: http://hathix.com
--   name: Athena Kan
-    bio: Harvard 2019
-    email: athenakan [at] college [dot] harvard [dot] edu
-    image: athena-kan.jpg
-    url: http://athenakan.com
--   name: Chris Kuang
-    bio: Harvard 2020
-    email: ckuang [at] college [dot] harvard [dot] edu
-    image: chris-kuang.jpg
-    url: https://medium.com/@chriskuang
+founders:
+    -   name: Neel Mehta
+        bio: Harvard 2018
+        email: neelmehta [at] college [dot] harvard [dot] edu
+        image: neel-mehta.jpg
+        website: http://hathix.com
+    -   name: Athena Kan
+        bio: Harvard 2019
+        email: athenakan [at] college [dot] harvard [dot] edu
+        image: athena-kan.jpg
+        website: http://athenakan.com
+    -   name: Chris Kuang
+        bio: Harvard 2020
+        email: ckuang [at] college [dot] harvard [dot] edu
+        image: chris-kuang.jpg
+        website: https://medium.com/@chriskuang
+mentors:
+    -   name: Nick Sinai
+        bio: Adjunct Prof. at Harvard Kennedy School of Government; former Deputy CTO of the US
+        twitter: NickSinai
+        linkedin: https://www.linkedin.com/in/nicksinai
+    -   name: Jeff Meisel
+        bio: CMO at US Census Bureau
+        twitter: jffmsl
+        linkedin: https://www.linkedin.com/in/jeffmeisel/

@@ -84,15 +84,17 @@ permalink: /
         <p>
             Our founders are a team of Harvard students passionate about technology for social good.
         </p>
-          {% for person in site.data.people %}
+          {% for person in site.data.people.founders %}
             <div class="media">
               <div class="media-left">
-                <a href="{{ person.url }}">
+                <a href="{{ person.website }}">
                   <img class="media-object img-circle mini-media" src="/assets/images/people/{{ person.image }}" alt="{{ person.name}}, {{ person.bio }}">
                 </a>
               </div>
               <div class="media-body">
-                <h4 class="media-heading">{{ person.name }}</h4>
+                <h4 class="media-heading">
+                    <a href="{{ person.website }}">{{ person.name }}</a>
+                </h4>
                 <p>
                     {{ person.bio }} <br />
                     {{ person.email }}
