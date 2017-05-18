@@ -18,9 +18,9 @@ permalink: /people/
         {% for person in site.data.people.founders %}
           <div class="media">
             <div class="media-left">
-              <a href="{{ person.website }}">
-                <img class="media-object img-circle mini-media" src="/assets/images/people/{{ person.image }}" alt="{{ person.name}}, {{ person.bio }}">
-              </a>
+                {% if person.image %}
+                    <img class="media-object img-circle mini-media" src="/assets/images/people/{{ person.image }}" alt="{{ person.name}}, {{ person.bio }}">
+                {% endif %}
             </div>
             <div class="media-body">
                 <h4 class="media-heading">
@@ -68,11 +68,11 @@ permalink: /people/
 
         {% for person in site.data.people.mentors %}
           <div class="media">
-            <div class="media-left">
-              <a href="{{ person.website }}">
-                <img class="media-object img-circle mini-media" src="/assets/images/people/{{ person.image }}" alt="{{ person.name}}, {{ person.bio }}">
-              </a>
-            </div>
+              <div class="media-left">
+                  {% if person.image %}
+                      <img class="media-object img-circle mini-media" src="/assets/images/people/{{ person.image }}" alt="{{ person.name}}, {{ person.bio }}">
+                  {% endif %}
+              </div>
             <div class="media-body">
               <h4 class="media-heading">
                   {{ person.name }}
