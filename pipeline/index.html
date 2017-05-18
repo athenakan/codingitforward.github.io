@@ -22,183 +22,24 @@ scripts:
                 Designed to be a supplement to Coding it Forward’s <a href="/fellowship">Civic Digital Fellowship</a>, the Pipeline Program helps students, especially underclassmen, make real-world impact and learn what it's like to be a technologist in the public sector.
             </p>
 
-            <p>
-                Applying is quick and painless &mdash; <strong>just drop your resume and we'll put it directly in the hands of senior leaders at federal agencies</strong>. No networking needed, and no more throwing your resume into a black hole.
-            </p>
-
-            <a href="https://harvard.az1.qualtrics.com/jfe/form/SV_79TmnTIcE5MQJNP" class="btn btn-block btn-primary" target="_blank">
-                Apply now!
-            </a>
-
             <hr />
 
+            <h2>Summer 2017</h2>
 
+            <p>
+                This summer, we're proud to be working with <strong>IRS, EPA, VA, and NIST</strong> to connect students with unpaid internship opportunities. Out of hundreds of applicants, we worked with leaders in these agencies to interview and hire a handful of students for each agency.
+            </p>
 
-        <h2>Host Agencies</h2>
+            <h2>Work with us</h2>
 
-        <p>
-            We will be connecting students with internships at the following agencies. <strong>Internships will be filled on a rolling basis until May 1st</strong>. As such, we strongly recommend applying as early as possible!
-        </p>
+            <p>
+                If you're interested in interning in the public sector through the Pipeline Program or the <a href="/fellowship">Civic Digital Fellowship</a>, we encourage you to <a href="https://www.facebook.com/groups/codingitforward">join our Facebook group</a> to get notified when we're starting applications for Summer 2018, and to connect with students, college clubs, startups, and other employers!
+            </p>
 
-        <br />
-
-          <!-- Nav tabs -->
-          <ul class="nav nav-tabs" role="tablist">
-            {% for posting in site.data.pipeline.confirmed %}
-                <li
-                    {% if forloop.first %}
-                        class="active"
-                    {% endif %}
-                >
-                    <a href="#tab-{{ posting.agency.short }}" role="tab" data-toggle="tab">
-                        {{ posting.agency.short }}
-                    </a>
-                </li>
-            {% endfor %}
-            <li>
-                <a href="#tab-extra" role="tab" data-toggle="tab">
-                    Other Agencies
-                </a>
-            </li>
-          </ul>
-
-          <!-- Tab panes -->
-          <div class="tab-content">
-
-              {% for posting in site.data.pipeline.confirmed %}
-                  <div role="tabpanel" id="tab-{{ posting.agency.short}}"
-                    {% if forloop.first %}
-                        class="tab-pane active"
-                    {% else %}
-                        class="tab-pane"
-                    {% endif %}
-                  >
-                      <h2>{{ posting.agency.long }} ({{ posting.agency.short }})</h2>
-
-                      {% if posting.force_exact_text %}
-                        {{ posting.force_exact_text }}
-                      {% else %}
-                          <p class="lead">
-                              The {{ posting.agency.short }} will be hiring <strong class="text-success">{{ posting.positions.number }} technology and data science interns for summer 2017.</strong> {{ posting.positions.eligibility }}
-                          </p>
-
-                          <p>{{ posting.program_structure }}</p>
-
-                          <hr />
-
-                          <div class="row">
-                              <div class="col-sm-4">
-                                  <h4 class="text-primary"><i class="fa fa-calendar"></i> Dates</h4>
-                                  <p>{{ posting.dates }}</p>
-                              </div>
-                              <div class="col-sm-4">
-                                  <h4 class="text-primary"><i class="fa fa-map-marker"></i>
-                                      {% if posting.location %}
-                                        Location
-                                      {% else %}
-                                        Locations
-                                      {% endif %}
-                                  </h4>
-
-                                  {% if posting.location %}
-                                    <p>
-                                        {{ posting.location }}
-                                    </p>
-                                  {% else %}
-                                    <ul>
-                                        {% for location in posting.locations %}
-                                            <li>
-                                                {{ location }}
-                                            </li>
-                                        {% endfor %}
-                                    </ul>
-                                  {% endif %}
-
-
-                              </div>
-                              <div class="col-sm-4">
-                                  <h4 class="text-primary"><i class="fa fa-suitcase"></i> Benefits</h4>
-                                  <p>
-                                      {% if posting.paid == false %}
-                                          This position is unpaid. Applicants are encouraged to seek outside funding from their home university.
-                                      {% else %}
-                                          This is a paid internship.
-                                      {% endif %}
-                                  </p>
-                              </div>
-                          </div>
-
-                          <hr />
-
-                          <h3>Projects</h3>
-                          <p>
-                               {{ posting.hiring_process }}
-                          </p>
-                          <ol>
-                              {% for project in posting.projects %}
-                                  <li>
-                                      <strong>{{ project.name }}</strong>: {{ project.description }}
-                                  </li>
-                              {% endfor %}
-                          </ol>
-
-                          <hr />
-                      {% endif %}
-
-                      <a href="https://harvard.az1.qualtrics.com/jfe/form/SV_79TmnTIcE5MQJNP" target="_blank" class="btn btn-primary btn-block">Apply now</a>
-                  </div>
-              {% endfor %}
-
-              <div role="tabpanel" id="tab-extra" class="tab-pane">
-                  <br />
-                  <p class="lead">
-                      We are working to finalize internship positions at the following agencies:
-                  </p>
-                  <ul>
-                    {% for agency in site.data.pipeline.tentative %}
-                        <li>
-                            {{ agency }}
-                        </li>
-                    {% endfor %}
-                  </ul>
-
-                  <p>
-                      If you're interested in applying to any of these agencies, <a href="https://harvard.az1.qualtrics.com/jfe/form/SV_79TmnTIcE5MQJNP" target="_blank">apply now</a> and check the box that says you wish to be considered for positions at other agencies.
-                  </p>
-
-                  <a href="https://harvard.az1.qualtrics.com/jfe/form/SV_79TmnTIcE5MQJNP" target="_blank" class="btn btn-primary btn-block">Apply now</a>
-              </div>
-          </div>
-
-          <br />
-          <br />
-
+            <p>
+                Agencies: if you're interested in getting access to hundreds of talented technology students from top schools across the country, please contact Chris Kuang at ckuang [at] college [dot] harvard [dot] edu! We're already starting to choose agencies to include in the Pipeline Program and <a href="/fellowship">Civic Digital Fellowship</a> for Summer 2018.
+            </p>
     </div>
     </div>
-
-    <h2>Eligiblity</h2>
-
-    <p>
-        Applicants must be current undergraduate students at an accredited college or university. Due to federal hiring policies, we unfortunately cannot hire students who are not citizens of the United States. In addition, some agencies might have additional criteria for eligibility.
-    </p>
-
-    <hr />
-
-    <h2>More opportunities</h2>
-
-    <p>
-        If you're interested in a fully-funded fellowship with housing, mentorship, and other benefits, we suggest applying for the <a href="/fellowship">Civic Digital Fellowship</a> as well!
-    </p>
-
-    <hr />
-
-
-    <h2>
-        Get in touch
-    </h2>
-
-    <p>
-        If you have any questions, feel free to contact Chris Kuang at ckuang [at] college [dot] harvard [dot] edu. Agencies: please contact Chris if you wish to be part of Coding it Forward's Pipeline Program!
-    </p>
 
 </div>
