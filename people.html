@@ -4,4 +4,104 @@ title: People
 permalink: /people/
 ---
 
-asdfs
+<div class="row">
+    <div class="col-md-6">
+        <h2>Founders</h2>
+
+        <p>
+            Coding it Forward was founded by a trio of Harvard students who were
+            passionate about building a community of people who want to use
+            their technology skills for social good. Starting at Harvard,
+            they've spread Coding it Forward nationwide.
+        </p>
+
+        {% for person in site.data.people.founders %}
+          <div class="media">
+            <div class="media-left">
+              <a href="{{ person.website }}">
+                <img class="media-object img-circle mini-media" src="/assets/images/people/{{ person.image }}" alt="{{ person.name}}, {{ person.bio }}">
+              </a>
+            </div>
+            <div class="media-body">
+                <h4 class="media-heading">
+                    {{ person.name }}
+
+                    &nbsp;
+                    {% if person.website %}
+                      <a href="{{ person.website }}">
+                          <i class="fa fa-globe"></i>
+                          <span class="sr-only">{{ person.name }} ({{ person.school }}) website</span>
+                      </a>
+                    {% endif %}
+                    {% if person.twitter %}
+                      <a href="https://twitter.com/@{{ person.twitter }}">
+                          <i class="fa fa-twitter"></i>
+                          <span class="sr-only">{{ person.name }} ({{ person.school }}) Twitter</span>
+                      </a>
+                    {% endif %}
+                    {% if person.linkedin %}
+                      <a href="{{ person.linkedin }}">
+                          <i class="fa fa-linkedin"></i>
+                          <span class="sr-only">{{ person.name }} ({{ person.school }}) LinkedIn</span>
+                      </a>
+                    {% endif %}
+                </h4>
+              <p>
+                  {{ person.school }} {{ person.class_of }} <br />
+                  {{ person.email }}
+              </p>
+            </div>
+          </div>
+        {% endfor %}
+
+        <!-- TODO extract the people-rendering code into a directive so it isn't duplicated -->
+    </div>
+
+    <div class="col-md-6">
+        <h2>Mentors</h2>
+
+        <p>
+            We thank our mentors, who show us every day what a career using technology
+            for social good looks like and help us connect our members with professional
+            and academic opportunities.
+        </p>
+
+        {% for person in site.data.people.mentors %}
+          <div class="media">
+            <div class="media-left">
+              <a href="{{ person.website }}">
+                <img class="media-object img-circle mini-media" src="/assets/images/people/{{ person.image }}" alt="{{ person.name}}, {{ person.bio }}">
+              </a>
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading">
+                  {{ person.name }}
+
+                  &nbsp;
+                  {% if person.website %}
+                    <a href="{{ person.website }}">
+                        <i class="fa fa-globe"></i>
+                        <span class="sr-only">{{ person.name }} website</span>
+                    </a>
+                  {% endif %}
+                  {% if person.twitter %}
+                    <a href="https://twitter.com/@{{ person.twitter }}">
+                        <i class="fa fa-twitter"></i>
+                        <span class="sr-only">{{ person.name }} Twitter</span>
+                    </a>
+                  {% endif %}
+                  {% if person.linkedin %}
+                    <a href="{{ person.linkedin }}">
+                        <i class="fa fa-linkedin"></i>
+                        <span class="sr-only">{{ person.name }} LinkedIn</span>
+                    </a>
+                  {% endif %}
+              </h4>
+              <p>
+                  {{ person.bio }}
+              </p>
+            </div>
+          </div>
+        {% endfor %}
+    </div>
+</div>
