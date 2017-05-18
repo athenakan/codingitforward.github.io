@@ -66,6 +66,8 @@ permalink: /people/
             and academic opportunities.
         </p>
 
+        <br />
+
         {% for person in site.data.people.mentors %}
           <div class="media">
               <div class="media-left">
@@ -104,4 +106,62 @@ permalink: /people/
           </div>
         {% endfor %}
     </div>
+</div>
+
+<hr />
+
+<h2>Campus Ambassadors</h2>
+
+<p>
+    Our Coding it Forward Campus Ambassadors are leaders at top schools around the country, spreading the word about technology for social good around their campus and helping get more students engaged in Coding it Forward. Our ambassadors have founded Coding it Forward-affiliated clubs at their schools, run hackathons, teach classes, and more.
+</p>
+
+<p>
+    Interested in becoming a Coding it Forward Campus Ambassador? Contact Neel Mehta at neelmehta [at] college [dot] harvard [dot] edu, or message him through our <a href="https://www.facebook.com/groups/codingitforward">Coding it Forward Facebook group</a>.
+</p>
+
+<br />
+
+<div class="row">
+{% for person in site.data.people.ambassadors %}
+    <div class="col-sm-6 col-md-3">
+        <div class="media">
+    <div class="media-left">
+        {% if person.image %}
+            <img class="media-object img-circle mini-media" src="/assets/images/people/{{ person.image }}" alt="{{ person.name}}, {{ person.bio }}">
+        {% endif %}
+    </div>
+    <div class="media-body">
+        <h4 class="media-heading">
+            {{ person.name }}
+
+            &nbsp;
+            {% if person.website %}
+              <a href="{{ person.website }}">
+                  <i class="fa fa-globe"></i>
+                  <span class="sr-only">{{ person.name }} ({{ person.school }}) website</span>
+              </a>
+            {% endif %}
+            {% if person.twitter %}
+              <a href="https://twitter.com/@{{ person.twitter }}">
+                  <i class="fa fa-twitter"></i>
+                  <span class="sr-only">{{ person.name }} ({{ person.school }}) Twitter</span>
+              </a>
+            {% endif %}
+            {% if person.linkedin %}
+              <a href="{{ person.linkedin }}">
+                  <i class="fa fa-linkedin"></i>
+                  <span class="sr-only">{{ person.name }} ({{ person.school }}) LinkedIn</span>
+              </a>
+            {% endif %}
+        </h4>
+      <p>
+          {{ person.school }} {{ person.class_of }} <br />
+          {{ person.email }}
+      </p>
+    </div>
+  </div>
+    </div>
+{% endfor %}
+
 </div>
