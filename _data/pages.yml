@@ -3,8 +3,6 @@ main:
     #     url: /
     -   name: Civic Digital Fellowship
         url: /fellowship/
-
-
     -   name: People
         url: /people/
     -   name: Blog
