@@ -2,9 +2,86 @@
 layout: default
 title: People
 permalink: /people/
+description: Founders, mentors, and ambassadors of Coding it Forward. Join us today!
 ---
 
+<h1>The People of Coding it Forward</h1>
+
+<p>
+    We're a rebel alliance of people using technology for social good.
+    Founded by a trio of Harvard students, we've spread to campuses across
+    the nation. We'd also like to thank our mentors for their tireless
+    guidance and advice.
+</p>
+
 <div class="row">
+    {% for person in site.data.people.people %}
+        <div class="col-sm-6 col-md-4">
+          <div class="media media-padded">
+            <div class="media-left">
+              {% if person.image %}
+                <img class="media-object img-circle mini-media" src="/assets/images/people/{{ person.image }}" alt="{{ person.name}}, {{ person.bio }}">
+              {% endif %}
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading">
+                    {{ person.name }}
+
+                    &nbsp;
+                    {% if person.website %}
+                      <a href="{{ person.website }}">
+                          <i class="fa fa-globe"></i>
+                          <span class="sr-only">{{ person.name }} ({{ person.school }}) website</span>
+                      </a>
+                    {% endif %}
+                    {% if person.twitter %}
+                      <a href="https://twitter.com/@{{ person.twitter }}">
+                          <i class="fa fa-twitter"></i>
+                          <span class="sr-only">{{ person.name }} ({{ person.school }}) Twitter</span>
+                      </a>
+                    {% endif %}
+                    {% if person.linkedin %}
+                      <a href="{{ person.linkedin }}">
+                          <i class="fa fa-linkedin"></i>
+                          <span class="sr-only">{{ person.name }} ({{ person.school }}) LinkedIn</span>
+                      </a>
+                    {% endif %}
+                </h4>
+              <p>
+                  <strong class="text-muted">{{ person.role | upcase }}</strong><br />
+
+                <!-- {% if person.student %}
+                  {{ person.student.school }} {{ person.student.class_of }} <br />
+                {% endif %} -->
+
+                {{ person.bio }}
+
+                {{ person.email }}
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- clearfixes -->
+
+        <!-- md, lg: spans 4 columns, so reset after 3 -->
+        {% assign mod3 = forloop.index0 | modulo:3 %}
+        {% if mod3 == 2 %}
+            <div class="clearfix visible-md-block visible-lg-block"></div>
+        {% endif %}
+
+        <!-- sm: spans 6 columns, so reset after 2 -->
+        {% assign mod2 = forloop.index0 | modulo:2 %}
+        {% if mod2 == 1 %}
+            <div class="clearfix visible-sm-block"></div>
+        {% endif %}
+
+
+    {% endfor %}
+</div>
+
+
+<!-- <div class="row">
     <div class="col-md-6">
         <h2>Founders</h2>
 
@@ -54,7 +131,7 @@ permalink: /people/
           </div>
         {% endfor %}
 
-        <!-- TODO extract the people-rendering code into a directive so it isn't duplicated -->
+
     </div>
 
     <div class="col-md-6">
@@ -162,6 +239,6 @@ permalink: /people/
     </div>
   </div>
     </div>
-{% endfor %}
+{% endfor %} -->
 
 </div>

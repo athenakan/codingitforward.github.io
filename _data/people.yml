@@ -1,62 +1,112 @@
-founders:
+people:
+    #####
+    ##### FOUNDERS
+    #####
     -   name: Neel Mehta
-        school: Harvard
-        class_of: 2018
+        role: founder
         bio: Harvard 2018
+        student:
+            school: Harvard
+            class_of: 2018
         email: neelmehta [at] college [dot] harvard [dot] edu
         image: neel-mehta.jpg
         website: http://hathix.com
         twitter: hathix
         linkedin: https://www.linkedin.com/in/neelmehta18
     -   name: Athena Kan
-        school: Harvard
-        class_of: 2019
+        role: founder
         bio: Harvard 2019
+        student:
+            school: Harvard
+            class_of: 2019
         email: athenakan [at] college [dot] harvard [dot] edu
         image: athena-kan.jpg
         website: http://athenakan.com
         twitter: kan_academy
         linkedin: https://www.linkedin.com/in/athena-kan-52a9b0102
     -   name: Chris Kuang
-        school: Harvard
-        class_of: 2020
+        role: founder
         bio: Harvard 2020
+        student:
+            school: Harvard
+            class_of: 2020
         email: ckuang [at] college [dot] harvard [dot] edu
         image: chris-kuang.jpg
         website: https://medium.com/@chriskuang
         twitter: chris_kuang
         linkedin: https://www.linkedin.com/in/chris-kuang-5b9216132/
-ambassadors:
-    -   name: Aiden Fitzgerald
-        school: Cornell
-        class_of: 2020
-    -   name: Angela Li
-        school: UChicago
-        class_of: 2018
-        twitter: CivicAngela
-    -   name: Emon Datta
-        school: Yale
-        class_of: 2018
-        linkedin: https://www.linkedin.com/in/emondatta
-    -   name: Grace Gu
-        school: UChicago
-        class_of: 2020
-        linkedin: https://www.linkedin.com/in/xiaohe-grace-gu-930567a1/
-    -   name: Lesley Cordero
-        school: Columbia
-        # it's not clear, i'm guessing
-        class_of: 2018
-        linkedin: https://www.linkedin.com/in/lesleycordero/
-mentors:
+
+    #####
+    ##### MENTORS
+    #####
     -   name: Nick Sinai
+        role: mentor
         bio: Adjunct Prof. at Harvard Kennedy School of Government; former Deputy CTO of the US
+        work:
+            company: Harvard
         twitter: NickSinai
         linkedin: https://www.linkedin.com/in/nicksinai
     -   name: Jeff Meisel
+        role: mentor
         bio: CMO, US Census Bureau
+        work:
+            company: US Census Bureau
         twitter: jffmsl
         linkedin: https://www.linkedin.com/in/jeffmeisel/
     -   name: Seamus Kraft
+        role: mentor
         bio: Founder, OpenGov Foundation
+        work:
+            company: OpenGov Foundation
         twitter: SeamusKraft
         linkedin: https://www.linkedin.com/in/seamuskraft
+
+    #####
+    ##### CAMPUS AMBASSADORS
+    #####
+    -   name: Aiden Fitzgerald
+        role: ambassador
+        bio: Cornell 2020
+        student:
+            school: Cornell
+            class_of: 2020
+    -   name: Angela Li
+        role: ambassador
+        bio: UChicago 2018
+        student:
+            school: UChicago
+            class_of: 2018
+        twitter: CivicAngela
+    -   name: Emon Datta
+        role: ambassador
+        bio: Yale 2018
+        student:
+            school: Yale
+            class_of: 2018
+        linkedin: https://www.linkedin.com/in/emondatta
+    -   name: Grace Gu
+        role: ambassador
+        bio: Yale 2018
+        student:
+            school: UChicago
+            class_of: 2020
+        linkedin: https://www.linkedin.com/in/xiaohe-grace-gu-930567a1/
+    -   name: Lesley Cordero
+        role: ambassador
+        bio: Columbia 2018
+        student:
+            school: Columbia
+            # it's not clear, i'm guessing
+            class_of: 2018
+        linkedin: https://www.linkedin.com/in/lesleycordero/
+
+roles:
+    -   name: Founder
+        plural: Founders
+        slug: founder
+    -   name: Mentor
+        plural: Mentors
+        slug: mentor
+    -   name: Campus Ambassador
+        plural: Campus Ambassadors
+        slug: ambassador
