@@ -3,7 +3,7 @@ people:
     ##### FOUNDERS
     #####
     -   name: Neel Mehta
-        role: founder
+        role: Founder
         bio: Harvard 2018
         student:
             school: Harvard
@@ -14,7 +14,7 @@ people:
         twitter: hathix
         linkedin: https://www.linkedin.com/in/neelmehta18
     -   name: Athena Kan
-        role: founder
+        role: Founder
         bio: Harvard 2019
         student:
             school: Harvard
@@ -25,7 +25,7 @@ people:
         twitter: kan_academy
         linkedin: https://www.linkedin.com/in/athena-kan-52a9b0102
     -   name: Chris Kuang
-        role: founder
+        role: Founder
         bio: Harvard 2020
         student:
             school: Harvard
@@ -40,7 +40,7 @@ people:
     ##### MENTORS
     #####
     -   name: Nick Sinai
-        role: mentor
+        role: Mentor
         bio: Adjunct Prof. at Harvard Kennedy School of Government; former Deputy CTO of the US
         work:
             company: Harvard
@@ -49,7 +49,7 @@ people:
         twitter: NickSinai
         linkedin: https://www.linkedin.com/in/nicksinai
     -   name: Jeff Meisel
-        role: mentor
+        role: Mentor
         bio: CMO, US Census Bureau
         work:
             company: US Census Bureau
@@ -57,7 +57,7 @@ people:
         twitter: jffmsl
         linkedin: https://www.linkedin.com/in/jeffmeisel/
     -   name: Seamus Kraft
-        role: mentor
+        role: Mentor
         bio: Founder, OpenGov Foundation
         work:
             company: OpenGov Foundation
@@ -105,14 +105,14 @@ people:
     #         # it's not clear, i'm guessing
     #         class_of: 2018
     #     linkedin: https://www.linkedin.com/in/lesleycordero/
-
-roles:
-    -   name: Founder
-        plural: Founders
-        slug: founder
-    -   name: Mentor
-        plural: Mentors
-        slug: mentor
-    -   name: Campus Ambassador
-        plural: Campus Ambassadors
-        slug: ambassador
+#
+# roles:
+#     -   name: Founder
+#         plural: Founders
+#         slug: founder
+#     -   name: Mentor
+#         plural: Mentors
+#         slug: mentor
+#     -   name: Campus Ambassador
+#         plural: Campus Ambassadors
+#         slug: ambassador
