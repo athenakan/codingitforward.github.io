@@ -44,6 +44,8 @@ people:
         bio: Adjunct Prof. at Harvard Kennedy School of Government; former Deputy CTO of the US
         work:
             company: Harvard
+        image: nick-sinai.png
+        website: https://www.insightpartners.com/team/nick-sinai/
         twitter: NickSinai
         linkedin: https://www.linkedin.com/in/nicksinai
     -   name: Jeff Meisel
@@ -51,6 +53,7 @@ people:
         bio: CMO, US Census Bureau
         work:
             company: US Census Bureau
+        image: jeff-meisel.jpg
         twitter: jffmsl
         linkedin: https://www.linkedin.com/in/jeffmeisel/
     -   name: Seamus Kraft
@@ -58,47 +61,50 @@ people:
         bio: Founder, OpenGov Foundation
         work:
             company: OpenGov Foundation
+        image: seamus-kraft.jpg
+        website: https://www.opengovfoundation.org/about/the-team/seamus-kraft/
         twitter: SeamusKraft
         linkedin: https://www.linkedin.com/in/seamuskraft
 
     #####
     ##### CAMPUS AMBASSADORS
     #####
-    -   name: Aiden Fitzgerald
-        role: ambassador
-        bio: Cornell 2020
-        student:
-            school: Cornell
-            class_of: 2020
-    -   name: Angela Li
-        role: ambassador
-        bio: UChicago 2018
-        student:
-            school: UChicago
-            class_of: 2018
-        twitter: CivicAngela
-    -   name: Emon Datta
-        role: ambassador
-        bio: Yale 2018
-        student:
-            school: Yale
-            class_of: 2018
-        linkedin: https://www.linkedin.com/in/emondatta
-    -   name: Grace Gu
-        role: ambassador
-        bio: Yale 2018
-        student:
-            school: UChicago
-            class_of: 2020
-        linkedin: https://www.linkedin.com/in/xiaohe-grace-gu-930567a1/
-    -   name: Lesley Cordero
-        role: ambassador
-        bio: Columbia 2018
-        student:
-            school: Columbia
-            # it's not clear, i'm guessing
-            class_of: 2018
-        linkedin: https://www.linkedin.com/in/lesleycordero/
+    ##### HIDE ALL THESE TILL THEY OFFICIALLY APPLY AND STUFF
+    # -   name: Aiden Fitzgerald
+    #     role: ambassador
+    #     bio: Cornell 2020
+    #     student:
+    #         school: Cornell
+    #         class_of: 2020
+    # -   name: Angela Li
+    #     role: ambassador
+    #     bio: UChicago 2018
+    #     student:
+    #         school: UChicago
+    #         class_of: 2018
+    #     twitter: CivicAngela
+    # -   name: Emon Datta
+    #     role: ambassador
+    #     bio: Yale 2018
+    #     student:
+    #         school: Yale
+    #         class_of: 2018
+    #     linkedin: https://www.linkedin.com/in/emondatta
+    # -   name: Grace Gu
+    #     role: ambassador
+    #     bio: Yale 2018
+    #     student:
+    #         school: UChicago
+    #         class_of: 2020
+    #     linkedin: https://www.linkedin.com/in/xiaohe-grace-gu-930567a1/
+    # -   name: Lesley Cordero
+    #     role: ambassador
+    #     bio: Columbia 2018
+    #     student:
+    #         school: Columbia
+    #         # it's not clear, i'm guessing
+    #         class_of: 2018
+    #     linkedin: https://www.linkedin.com/in/lesleycordero/
 
 roles:
     -   name: Founder

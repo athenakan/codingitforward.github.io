@@ -25,15 +25,16 @@ description: Founders, mentors, and ambassadors of Coding it Forward. Join us to
             </div>
             <div class="media-body">
               <h4 class="media-heading">
-                    {{ person.name }}
+                  {% if person.website %}
+                    <a href="{{ person.website }}">
+                        {{ person.name }}
+                    </a>
+                  {% else %}
+                    <span class="text-primary">{{ person.name }}</span>
+                  {% endif %}
+
 
                     &nbsp;
-                    {% if person.website %}
-                      <a href="{{ person.website }}">
-                          <i class="fa fa-globe"></i>
-                          <span class="sr-only">{{ person.name }} ({{ person.school }}) website</span>
-                      </a>
-                    {% endif %}
                     {% if person.twitter %}
                       <a href="https://twitter.com/@{{ person.twitter }}">
                           <i class="fa fa-twitter"></i>
